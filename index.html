@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --blue: #0866ff;
+            --grey: #f2f4f7;
+            --black: #1c1e21;
+            --green: #42b72a;
+            --inputeheight: 70px;
+            --inputewidth: 300px;
+        }
+        section{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 200px;
+            padding: 0 40px ;
+        }
+        .createbtn{
+            background-color: var(--green);
+            height: 50px;
+            width: 200px;
+            border-radius: 10px;
+            margin-left: 55px;
+            color: white;
+            border: none;
+        }
+        .logbtn{
+            background-color: var(--blue);
+            color: #f2f4f7;
+            text-align: center;
+            }
+        form{
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            width: fit-content;
+            gap: 20px;
+            padding: 30px;
+            background-color: var(--grey);
+            border: none;
+            border-radius: 10px;
+            }
+        input{
+                height: var(--inputeheight);
+                width: var(--inputewidth);
+                font-size: 30px;
+                border-radius: 10px;
+            }
+        a{
+                text-decoration: none;
+                padding-left: 90px;
+            }
+        .txts{
+                font-size: 20px;
+            }
+        h1{
+            color:var(--blue);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 90px;
+        }
+        p{
+            font-size: 30px;
+        }
+        .d1{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            margin-top: -200px;
+        }
+        @media (max-width:1000px){
+            p{
+            font-size: 25px;
+        }
+            .d1{
+            display: flex;
+            flex-direction: column;
+            width: 370px;
+            margin-top: -200px;
+        }
+    }
+        @media (max-width:880px){
+            section{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 200px;
+            padding: 0 40px ;
+        }
+        .d1{
+            display: flex;
+            flex-direction: column;
+            width: 370px;
+            margin-top: -200px;
+            margin-left: 25px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <section class="section1">
+        <div class="d1">
+            <h1>facebook</h1>
+            <p>Facebook helps you connect and share with the people in your life.</p>
+        </div>
+        <div>
+            <form action="" class="form">
+                <input type="text" placeholder=" your name ..." class="txts">
+                <input type="password" placeholder=" password ..." class="txts">
+                <input type="button" value="log in" class="logbtn">
+                <a href="#">forgotten password?</a>
+                <button class="createbtn">create new account</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
