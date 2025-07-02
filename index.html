@@ -3,125 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>session_7</title>
     <style>
         *{
-            margin:0;
+            margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         :root{
-            --blue: #0866ff;
-            --grey: #f2f4f7;
-            --black: #1c1e21;
-            --green: #42b72a;
-            --inputeheight: 70px;
-            --inputewidth: 300px;
+            --blue:#0866ff;
+            --green:#42b72a;
+            --grey:#f2f4f7;
+            --white:#ffffff;
+            --inputheight:52px;
+            --inputwidth:364px;
         }
-        section{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            margin-top: 200px;
-            padding: 0 40px ;
-        }
-        .createbtn{
-            background-color: var(--green);
-            height: 50px;
-            width: 200px;
-            border-radius: 10px;
-            margin-left: 55px;
-            color: white;
-            border: none;
-        }
-        .logbtn{
-            background-color: var(--blue);
-            color: #f2f4f7;
-            text-align: center;
-            }
-        form{
-            display: flex;
-            flex-direction: column;
-            height: fit-content;
-            width: fit-content;
-            gap: 20px;
-            padding: 30px;
-            background-color: var(--grey);
-            border: none;
-            border-radius: 10px;
-            }
         input{
-                height: var(--inputeheight);
-                width: var(--inputewidth);
-                font-size: 30px;
-                border-radius: 10px;
-            }
-        a{
-                text-decoration: none;
-                padding-left: 90px;
-            }
-        .txts{
-                font-size: 20px;
-            }
-        h1{
-            color:var(--blue);
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 90px;
+            height: var(--inputheight);
+            width: var(--inputwidth);
+            padding-left: 10px;
+            font-size: 16px;
+            border: 1px solid rgba(0, 0, 0, 0.412);
+            border-radius: 10px;
         }
-        p{
-            font-size: 30px;
+        body{
+            background-color: var(--grey);
         }
-        .d1{
+        .sec1{
+            height: 100vh;
             display: flex;
-            flex-direction: column;
-            width: 500px;
-            margin-top: -200px;
-        }
-        @media (max-width:1000px){
-            p{
-            font-size: 25px;
-        }
-            .d1{
-            display: flex;
-            flex-direction: column;
-            width: 370px;
-            margin-top: -200px;
-        }
-    }
-        @media (max-width:880px){
-            section{
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+            justify-content: center;
             align-items: center;
-            justify-content: space-around;
-            margin-top: 200px;
-            padding: 0 40px ;
+            background-color: var(--grey);
+            gap: 70px;
+            padding-left: 60px;
+            padding-right: 60px;
         }
-        .d1{
+        .rstcon{
             display: flex;
             flex-direction: column;
-            width: 370px;
-            margin-top: -200px;
-            margin-left: 25px;
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 490px;
+            margin-top: -170px;
+        }
+        a{
+            text-decoration: none;
+            color: var(--blue);
+            font-size: 14px;
+        }
+        .seccon{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            background-color: var(--white);
+            border-radius: 5px;
+            height: fit-content;
+            box-shadow: 0px 0px 5px rgb(153, 153, 153);
+            padding: 20px;
+        }
+        button{
+            height: 48px;
+            width: 194px;
+            background-color: var(--green);
+            border: none;
+            border-radius: 10px;
+            font-size: 17px;
+            color: var(--white);
+        }
+        .btn{
+            font-size: 25px;
+            color: var(--white);
+            text-align: center;
+            background-color: var(--blue);
+        }
+        @media(max-width:1075px) {
+            .rstcon{
+            display: flex;
+            flex-direction: column;
+            font-size: 24px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 330px;
+            margin-top: -170px;
+        }
+        .txt{
+            width: 330px;
+        }
+        }
+        @media(max-width:990px){
+            .sec1{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--grey);
+            gap: 30px;
+            padding-left: 60px;
+            padding-right: 60px;
+            margin-top: -50px;
+        }
+        .img2{
+            margin-right: -80px;
+        }
+        .rstcon{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: -170px;
+            font-size: 24px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 480px;
+            margin-top: -0px;
         }
         }
     </style>
 </head>
 <body>
-    <section class="section1">
-        <div class="d1">
-            <h1>facebook</h1>
-            <p>Facebook helps you connect and share with the people in your life.</p>
+    <section class="sec1">
+        <div class="rstcon">
+            <div><img class="img2" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" style="margin-left: -20px;" width="320px" alt=""></div>
+            <div><p class="txt" style="margin-top: -20px;">Facebook helps you connect and share with the people in your life.</p></div>
         </div>
         <div>
-            <form action="" class="form">
-                <input type="text" placeholder=" your name ..." class="txts">
-                <input type="password" placeholder=" password ..." class="txts">
-                <input type="button" value="log in" class="logbtn">
-                <a href="#">forgotten password?</a>
-                <button class="createbtn">create new account</button>
-            </form>
+        <form action="" class="seccon">
+            <input type="text" placeholder="Email address or phone number">
+            <input type="password" placeholder="password">
+            <input type="button" class="btn" value="log in">
+            <a href="#">Forgotten password?</a>
+            <p>_________________________________________</p>
+            <button>Create new account</button>
+        </form>
+        <p style="padding-left: 50px;
+                  margin-top: 20px; "><a style="color: black;
+                  font-size: 18px;" href="/pages/create/?ref_type=registration_form" class="_8esh">Create a Page</a> for a celebrity brand or business</p>
         </div>
     </section>
 </body>
